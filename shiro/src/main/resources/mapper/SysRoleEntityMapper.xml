@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.superman.shiro.mapper.SysRoleEntityMapper">
+  <resultMap id="BaseResultMap" type="com.superman.shiro.entity.SysRoleEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="available" jdbcType="VARCHAR" property="available" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
+  </resultMap>
+
+  <select id="findRoleByUsername" resultType="com.superman.shiro.entity.SysRoleEntity">
+          SELECTs
+            sys_role.id,
+            sys_role.available,
+            sys_role.description,
+            sys_role.role
+        FROM
+            sys_user
+        RIGHT JOIN sys_user_role ON sys_user.uid = sys_user_role.uid
+        LEFT JOIN sys_role ON sys_user_role.role_id = sys_role.id
+        WHERE username=#{username}
+    </select>
+</mapper>
