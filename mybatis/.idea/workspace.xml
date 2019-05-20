@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="054d63ba-4876-4332-8ca2-7007c4263964" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisMapperScanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/MybatisPlusApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/PermissionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/RolePermissionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/UserRoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/dao/PermissionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/dao/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/dao/RolePermissionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/dao/UserRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/RolePermission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/PermissionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/RolePermissionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/UserRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/impl/PermissionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/impl/RolePermissionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/impl/UserRoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/test-classes/com/superman/mybatisplus/MybatisPlusApplicationTests.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1380271483">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="21" />
+          <entry key="xml" value="4" />
+          <entry key="yml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="21" />
+          <entry key="XML" value="4" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="16" />
+          <entry key="java" value="343" />
+          <entry key="xml" value="130" />
+          <entry key="yml" value="132" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="343" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="XML" value="130" />
+          <entry key="YAML" value="132" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper2/SysPermissionEntityMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/superman/mybatis/MybatisApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisMapperScanConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/MybatisApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/mavenRepository/maven" />
+        <option name="mavenHome" value="/Library/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="/Library/apache-maven-3.6.0/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.superman.mybatis.common.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisApplicationTests.tongmapperByZIDINGYI">
+    <configuration name="MybatisApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <option name="PACKAGE_NAME" value="com.superman.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.superman.mybatis.MybatisApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisApplicationTests.tongmapperByTk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <option name="PACKAGE_NAME" value="com.superman.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.superman.mybatis.MybatisApplicationTests" />
+      <option name="METHOD_NAME" value="tongmapperByTk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <option name="PACKAGE_NAME" value="com.superman.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.superman.mybatis.MybatisApplicationTests" />
+      <option name="METHOD_NAME" value="tongmapperByZIDINGYI" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.superman.mybatis.MybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MybatisApplication" />
+      <item itemvalue="JUnit.MybatisApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.MybatisApplicationTests.tongmapperByTk" />
+      <item itemvalue="JUnit.MybatisApplicationTests.tongmapperByZIDINGYI" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisApplicationTests.tongmapperByZIDINGYI" />
+        <item itemvalue="JUnit.MybatisApplicationTests.tongmapperByTk" />
+        <item itemvalue="JUnit.MybatisApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 38m 20s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 41m 05s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 42m 54s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 43m 31s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 43m 51s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 44m 23s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 44m 57s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 45m 54s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 57m 12s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisApplicationTests_tongmapperByZIDINGYI - 2019.05.20 at 22h 58m 13s.xml">
+      <configuration name="MybatisApplicationTests.tongmapperByZIDINGYI" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25035766" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" weight="0.32961586" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46964064" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.14020029" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysRoleEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="68" lean-forward="true" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper1/SysPermissionEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper1/SysRolePermissionEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper2/SysUserEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper2/SysPermissionEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysPermissionEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/superman/mybatis/MybatisApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/MybatisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisMapperScanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
