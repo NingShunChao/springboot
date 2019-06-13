@@ -28,15 +28,16 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.46</version>
             <scope>runtime</scope>
         </dependency>
 
         <!--数据源-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.10</version>
-        </dependency>-->
+        </dependency>
         <!--<dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
