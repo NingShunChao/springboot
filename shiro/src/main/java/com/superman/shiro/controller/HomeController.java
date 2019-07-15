@@ -1,64 +1,75 @@
 package com.superman.shiro.controller;
 
-import com.superman.shiro.common.util.MD5Utils;
+
 import com.superman.shiro.common.util.ShiroUtil;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.UnknownAccountException;
+import com.superman.shiro.service.SysUserService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authc.AuthenticationException;
+
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
 
 /**
  * @Auther: Ningsc
  * @Date: 2019/5/19 11:57
  * @Description:
  */
+@Slf4j
 @Controller
 public class HomeController {
-    @RequestMapping({"/","/index"})
-    public String index(){
-        return"/index";
-    }
 
-    // 这里如果不写method参数的话，默认支持所有请求，如果想缩小请求范围，还是要添加method来支持get, post等等某个请求。
-    @RequestMapping("/login")
-    public String login(HttpServletRequest request,Map<String, Object> map) throws Exception {
-        String username=request.getParameter("username");
-    	String password=request.getParameter("password");
-        password = MD5Utils.encrypt(username, password);
+    @Autowired
+    SysUserService sysUserService;
+
+
+    @RequestMapping("/doLogin")
+    public String doLogin(@RequestParam("username") String username,
+                          @RequestParam("password") String password) {
+        // 将用户名及密码封装到UsernamePasswordToken
         UsernamePasswordToken token = new UsernamePasswordToken(username, password);
-        ShiroUtil.login(token);
-        if(ShiroUtil.getUser() != null){
-            return "redirect:/userInfo/userList";
-        }else {
-            // 登录失败从request中获取shiro处理的异常信息。
-            // shiroLoginFailure:就是shiro异常类的全类名.
-            Object exception = request.getAttribute("shiroLoginFailure");
-            String msg = "";
-            if (exception != null) {
-                if (UnknownAccountException.class.isInstance(exception)) {
-                    System.out.println("账户不存在");
-                    msg = "账户不存在或密码不正确";
-                } else if (IncorrectCredentialsException.class.isInstance(exception)) {
-                    System.out.println("密码不正确");
-                    msg = "账户不存在或密码不正确";
-                } else {
-                    System.out.println("其他异常");
-                    msg = "其他异常";
-                }
+        try {
+            ShiroUtil.login(token);
+            // 判断当前用户是否登录
+            if (ShiroUtil.getSubjct().isAuthenticated() == true) {
+                return "/index.html";
             }
-            map.put("msg", msg);
-            return "/login";
+        } catch (AuthenticationException e) {
+            e.printStackTrace();
+            System.out.println("登录失败");
         }
+        return "/loginPage.html";
     }
 
-    @RequestMapping("/403")
-    public String unauthorizedRole(){
-        System.out.println("------没有权限-------");
-        return "403";
+    @RequestMapping("/doRegister")
+    public String doRegister(@RequestParam("username") String username,
+                             @RequestParam("password") String password) {
+
+        boolean result = sysUserService.registerData(username,password);
+        if(result){
+            return "redirect:/login";
+        }
+        return "redirect:/register";
     }
+
+    @RequestMapping(value = "/login")
+    public String login() {
+        log.info("login() 方法被调用");
+        return "loginPage.html";
+    }
+
+    @RequestMapping(value = "/register")
+    public String register() {
+        log.info("register() 方法被调用");
+        return "registerPage.html";
+    }
+
+    @RequestMapping(value = "/403")
+    public String unknow() {
+        return "/error/403.html";
+    }
+
 }

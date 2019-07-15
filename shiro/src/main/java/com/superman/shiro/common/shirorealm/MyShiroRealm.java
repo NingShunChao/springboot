@@ -1,13 +1,11 @@
 package com.superman.shiro.common.shirorealm;
 
+import com.superman.shiro.common.util.MD5Utils;
 import com.superman.shiro.entity.SysUserEntity;
 import com.superman.shiro.mapper.SysPermissionEntityMapper;
 import com.superman.shiro.mapper.SysRoleEntityMapper;
 import com.superman.shiro.service.SysUserService;
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -16,10 +14,12 @@ import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * @Auther: Ningsc
- * @Date: 2019/5/19 11:14
- * @Description:
- */
+* @Author: Ningsc
+* @Date: 2019/7/15
+* @Description:  自定义域
+* @Param:
+* @return:
+*/
 public class MyShiroRealm extends AuthorizingRealm {
 
     @Autowired
@@ -29,15 +29,21 @@ public class MyShiroRealm extends AuthorizingRealm {
     @Autowired
     SysPermissionEntityMapper sysPermissionEntityMapper;
 
+    /**
+     * 认证对象
+     */
+    private SimpleAuthenticationInfo authenticationInfo = null;
+
+
+
 
     /**
-     * @Author Ningsc
-     * @Description  授权
-     * @Date 11:17 2019/5/19
-     * @Param [principalCollection]
-     * @return org.apache.shiro.authz.AuthorizationInfo
-     * @throw
-     */
+    * @Author: Ningsc
+    * @Date: 2019/7/15
+    * @Description:  授权
+    * @Param:
+    * @return:
+    */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         System.out.println("权限配置-->MyShiroRealm.doGetAuthorizationInfo()");
@@ -59,33 +65,36 @@ public class MyShiroRealm extends AuthorizingRealm {
 
 
     /**
-     * @Author Ningsc
-     * @Description   认证
-     * @Date 11:17 2019/5/19
-     * @Param [authenticationToken]
-     * @return org.apache.shiro.authc.AuthenticationInfo
-     * @throw
-     */
+    * @Author: Ningsc
+    * @Date: 2019/7/15
+    * @Description:  认证
+     * 1.doGetAuthenticationInfo，获取认证消息，如果数据库中没有数，返回null，如果得到了正确的用户名和密码，返回指定类型的对象
+     * 2.AuthenticationInfo 可以使用SimpleAuthenticationInfo实现类，封装正确的用户名和密码
+     * 3.token参数 就是我们需要认证的token
+    * @Param:
+    * @return:
+    */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        System.out.println("MyShiroRealm.doGetAuthenticationInfo()");
-        //获取用户的输入的账号.
+        // 获取用户的输入的账号.
         String username = (String)authenticationToken.getPrincipal();
-        System.out.println(authenticationToken.getCredentials());
-        //通过username从数据库中查找 User对象，如果找到，没找到.
+        String password =  new String((char[]) authenticationToken.getCredentials());
+//        UsernamePasswordToken upToken = (UsernamePasswordToken) authenticationToken;
+        //通过username从数据库中查找 User对象
         //实际项目中，这里可以根据实际情况做缓存，如果不做，Shiro自己也是有时间间隔机制，2分钟内不会重复执行该方法
         SysUserEntity userInfo = sysUserService.findSysUser(username);
-        System.out.println("----->>userInfo="+userInfo);
-        if(userInfo == null){
-            ////没有返回登录用户名对应的SimpleAuthenticationInfo对象时,就会在LoginController中抛出UnknownAccountException异常
-            return null;
+        System.out.println("----->>userInfo="+userInfo.toString());
+        if(userInfo != null){
+            // 封装查询结果，返回给我们的调用
+            // 获取盐值,和注册时使用的加盐方式一样
+            ByteSource salt = ByteSource.Util.bytes(username+password);
+            password = MD5Utils.encrypt(password,salt);
+            // 将账户名，密码，盐值，realmName实例化到SimpleAuthenticationInfo中交给Shiro来管理
+            authenticationInfo = new SimpleAuthenticationInfo(userInfo, password,salt, getName());
+        }else {
+            // 如果没有查询到，抛出一个异常
+            throw new AuthenticationException();
         }
-        SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
-                userInfo, //用户名
-                userInfo.getPassword(), //密码
-                ByteSource.Util.bytes(userInfo.getSalt()),//salt=username+salt
-                getName()  //realm name
-        );
         return authenticationInfo;
     }
 }

@@ -17,4 +17,10 @@ public class ShiroApplication {
         System.out.println("ヾ(◍°∇°◍)ﾉﾞ   shiro权限框架启动成功      ヾ(◍°∇°◍)ﾉﾞ\n");
     }
 
+
+
+
+
+
+
 }

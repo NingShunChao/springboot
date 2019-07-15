@@ -18,4 +18,6 @@ public interface SysUserService {
      * @throw
      */
     SysUserEntity findSysUser(String username);
+
+    boolean registerData(String username, String password);
 }
