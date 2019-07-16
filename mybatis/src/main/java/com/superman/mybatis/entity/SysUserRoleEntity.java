@@ -1,9 +1,10 @@
 package com.superman.mybatis.entity;
 
+import java.io.Serializable;
 import javax.persistence.*;
 
 @Table(name = "sys_user_role")
-public class SysUserRoleEntity {
+public class SysUserRoleEntity implements Serializable {
     @Id
     private Integer id;
 
@@ -11,6 +12,8 @@ public class SysUserRoleEntity {
     private Integer roleId;
 
     private Integer uid;
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * @return id
@@ -52,5 +55,19 @@ public class SysUserRoleEntity {
      */
     public void setUid(Integer uid) {
         this.uid = uid;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", roleId=").append(roleId);
+        sb.append(", uid=").append(uid);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
     }
 }

@@ -2,52 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="054d63ba-4876-4332-8ca2-7007c4263964" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyCommentGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/mybatis-plus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/mybatis-plus.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/MybatisPlusApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/MybatisPlusApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/PermissionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/RoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/RolePermissionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/UserRoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/PermissionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/RoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/RolePermissionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/UserRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/RolePermission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/PermissionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/RolePermissionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/RoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/UserRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/PermissionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/RolePermissionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/RoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/UserRoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/applicaion.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/PermissionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/RolePermissionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/UserRoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/test/java/com/superman/mybatisplus/MybatisPlusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/test/java/com/superman/mybatisplus/MybatisPlusApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/applicaion.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/RolePermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/RolePermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/UserRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/controller/UserRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/PermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/RolePermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/RolePermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/dao/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/RolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/RolePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/RolePermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/RolePermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/RolePermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/RolePermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/util/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/java/com/superman/mybatisplus/util/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/PermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/RolePermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/RolePermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/config/MybatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/config/MybatisPlusConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/RolePermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/RolePermissionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/UserRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/controller/UserRoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/RolePermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/RolePermission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/entity/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/com/superman/mybatisplus/util/CodeGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/PermissionMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/RoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/RolePermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/RolePermissionMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus/target/classes/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_1_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_1_1_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysPermissionEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysRoleEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysRolePermissionEntity.java" beforeDir="false" />
@@ -58,11 +73,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysRolePermissionEntityMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysUserEntityMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysUserRoleEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysPermissionEntityMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleEntityMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysRolePermissionEntityMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysUserEntityMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysUserRoleEntityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/superman/mybatis/MybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/superman/mybatis/MybatisApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,25 +93,25 @@
     <session id="1380271483">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="28" />
-          <entry key="xml" value="5" />
+          <entry key="java" value="35" />
+          <entry key="xml" value="7" />
           <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="35" />
+          <entry key="XML" value="7" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -102,7 +119,7 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="java" value="343" />
-          <entry key="xml" value="130" />
+          <entry key="xml" value="202" />
           <entry key="yml" value="132" />
         </counts>
       </usages-collector>
@@ -110,7 +127,7 @@
         <counts>
           <entry key="JAVA" value="343" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="XML" value="130" />
+          <entry key="XML" value="202" />
           <entry key="YAML" value="132" />
         </counts>
       </usages-collector>
@@ -119,43 +136,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisMapperScanConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysRoleEntityMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysUserEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="77">
+              <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -163,17 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="159">
+              <caret line="144" column="60" lean-forward="true" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -184,6 +180,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -198,11 +195,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/test/java/com/superman/mybatis/MybatisApplicationTests.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisMapperScanConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/MybatisApplication.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyCommentGenerator.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
       </list>
     </option>
   </component>
@@ -248,7 +246,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -283,49 +281,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -456,14 +411,15 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21387696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46964064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38909543" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,7 +435,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.14020029" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.09298999" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,65 +470,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysRoleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="340">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/config/MybatisMapperScanConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/mapper/SysRoleEntityMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="144" column="60" lean-forward="true" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysRoleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysPermissionEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/common/mapper/MyCommentGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/superman/mybatis/entity/SysUserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
         </state>
       </provider>
     </entry>

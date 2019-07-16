@@ -1,10 +1,6 @@
 package com.superman.mybatis;
 
 
-import com.superman.mybatis.entity.SysPermissionEntity;
-import com.superman.mybatis.entity.SysUserEntity;
-import com.superman.mybatis.mapper.SysPermissionEntityMapper;
-import com.superman.mybatis.mapper.SysUserEntityMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

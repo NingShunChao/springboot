@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <swagger.version>2.7.0</swagger.version>
     </properties>
 
     <dependencies>
@@ -38,11 +39,7 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.10</version>
         </dependency>
-        <!--<dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.8</version>
-        </dependency>-->
+
         <!-- fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -69,17 +66,14 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.1.0</version>
         </dependency>
-       <!-- <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>2.1.6</version>
-        </dependency>-->
+
         <!--代码生成依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.1.1</version>
         </dependency>
+
         <!--这个依赖用于生成代码做模版，默认是velocity-->
         <dependency>
             <groupId>org.apache.velocity</groupId>
@@ -97,11 +91,29 @@
             <artifactId>beetl</artifactId>
             <version>3.0.0.M2</version>
         </dependency>
+
+        <!--lombok依赖包-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+
+        <!-- swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!-- swagger2 ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+
 
 
     </dependencies>

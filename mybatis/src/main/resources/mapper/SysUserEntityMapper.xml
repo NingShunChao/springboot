@@ -12,4 +12,15 @@
     <result column="state" jdbcType="VARCHAR" property="state" />
     <result column="username" jdbcType="VARCHAR" property="username" />
   </resultMap>
+  <resultMap id="BaseResultMap" type="com.superman.mybatis.entity.SysUserEntity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="salt" jdbcType="VARCHAR" property="salt" />
+    <result column="state" jdbcType="VARCHAR" property="state" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+  </resultMap>
 </mapper>

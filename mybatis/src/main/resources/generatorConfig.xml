@@ -28,6 +28,10 @@
 -->
 
     <context id="Mysql" targetRuntime="MyBatis3Simple">
+
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
         <!--https://mapperhelper.github.io/docs/3.usembg/，自动生成代码的通用mapper插件-->
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
             <!--使用通用mapper-->
@@ -38,13 +42,29 @@
             <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
             <!-- <property name="caseSensitive" value="true"/>-->
         </plugin>
+
+        <!--配置pojo的序列化插件-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
+        <!-- 配置生成pojo的toString()方法的插件 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+
+        <!-- 通过type指定自定义的注释 -->
+        <!--<commentGenerator type="com.superman.mybatis.common.mapper.MyCommentGenerator">-->
+            <!--&lt;!&ndash; 不要开启，否则将不会使用自定义注释 &ndash;&gt;-->
+            <!--&lt;!&ndash; <property name="suppressAllComments" value="true"> &ndash;&gt;-->
+        <!--</commentGenerator>-->
+
         <!-- 注释 -->
         <commentGenerator >
             <!-- 是否取消自动生成的注释 -->
-            <property name="suppressAllComments" value="false"/>
+            <property name="suppressAllComments" value="true"/>
             <!-- 是否生成注释代时间戳-->
-            <!-- <property name="suppressDate" value="true" />-->
+            <property name="suppressDate" value="true" />
         </commentGenerator>
+
+
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=true"

@@ -1,9 +1,10 @@
 package com.superman.mybatis.entity;
 
+import java.io.Serializable;
 import javax.persistence.*;
 
 @Table(name = "sys_permission")
-public class SysPermissionEntity {
+public class SysPermissionEntity implements Serializable {
     @Id
     private Integer id;
 
@@ -12,6 +13,8 @@ public class SysPermissionEntity {
     private String permission;
 
     private String url;
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * @return id
@@ -67,5 +70,20 @@ public class SysPermissionEntity {
      */
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", name=").append(name);
+        sb.append(", permission=").append(permission);
+        sb.append(", url=").append(url);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
     }
 }
